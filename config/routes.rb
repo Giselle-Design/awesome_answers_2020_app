@@ -3,4 +3,8 @@ Rails.application.routes.draw do
  get("/hello_world", to: "welcome#hello_world")
 
  get "/", to: "welcome#root"
+
+ get "/contact_us", to: "welcome#contact_us"
+
+ post "/process_contact", to: "welcome#process_contact"
 end

@@ -1,0 +1,45 @@
+
+<h1>Contact Us</h1>
+<!-- <div class="container">
+  <form action="/process_contact" method="POST">
+
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+
+  </form>
+</div> -->
+
+<div class="container">
+<%= form_tag('/process_contact') do %>
+   <div>
+       <%= label_tag(:full_name) %><br />
+       <%= text_field_tag(:full_name) %>
+   </div>
+
+   <div>
+       <%= label_tag(:email) %><br />
+       <%= email_field_tag(:email) %>
+   </div>
+   <div>
+       <%= label_tag(:message) %><br />
+       <%= text_area_tag(:message) %>
+   </div>
+ <div><%= submit_tag 'Contact Us' %></div>
+<% end %>
+
+</div>
