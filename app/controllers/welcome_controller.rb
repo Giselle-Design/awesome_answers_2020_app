@@ -4,4 +4,7 @@ class WelcomeController < ApplicationController
     render(plain: "hello_world")
   end
 
+  def root
+  end
+
 end
