@@ -5,3 +5,20 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+Question.delete_all
+
+NUM_QUESTIONS = 200
+
+NUM_QUESTIONS.times do
+  created_at = Faker::Date.backward(days: 365 * 3)
+  Question.create(
+  title: Faker::Hacker.say_something_smart,
+  body:  Faker::ChuckNorris.fact,
+  created_at: created_at,
+  updated_at: created_at
+  )
+end
+
+question = Question.all
+puts Cowsay.say("Generated #{question.count} questions", :turkey)
