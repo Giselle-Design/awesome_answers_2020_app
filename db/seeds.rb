@@ -16,7 +16,8 @@ NUM_QUESTIONS.times do
   title: Faker::Hacker.say_something_smart,
   body:  Faker::ChuckNorris.fact,
   created_at: created_at,
-  updated_at: created_at
+  updated_at: created_at,
+  view_count: Faker::Number.between(from: 1, to: 100) 
   )
 end
 

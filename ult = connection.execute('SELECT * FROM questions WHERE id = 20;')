@@ -1,0 +1,779 @@
+=> [32m#<ActiveRecord::ConnectionAdapters::PostgreSQLAdapter:0x00007ff8d87f3978[0m
+ @advisory_locks_enabled[32m=[0m[1;36mtrue[0m,
+ @config[32m=[0m{[33m:adapter[0m=>[31m[1;31m"[0m[31mpostgresql[1;31m"[0m[31m[0m, [33m:encoding[0m=>[31m[1;31m"[0m[31municode[1;31m"[0m[31m[0m, [33m:pool[0m=>[1;34m5[0m, [33m:database[0m=>[31m[1;31m"[0m[31mawesome_answers_2020_development[1;31m"[0m[31m[0m},
+ @connection[32m=[0m[32m#<PG::Connection:0x00007ff8d87f81f8[0m[32m>[0m,
+ @connection_parameters[32m=[0m{[33m:dbname[0m=>[31m[1;31m"[0m[31mawesome_answers_2020_development[1;31m"[0m[31m[0m},
+ @default_timezone[32m=[0m[33m:utc[0m,
+ @idle_since[32m=[0m[1;35m108853.322583653[0m,
+ @instrumenter[32m=[0m
+  [32m#<ActiveSupport::Notifications::Instrumenter:0x00007ff8d8855c90[0m
+   @id[32m=[0m[31m[1;31m"[0m[31m7c97cde69529c60727d1[1;31m"[0m[31m[0m,
+   @notifier[32m=[0m
+    [32m#<ActiveSupport::Notifications::Fanout:0x000055a4577bd5d0[0m
+     @_mutex[32m=[0m[32m#<Thread::Mutex:0x000055a4577bd3f0[0m[32m>[0m,
+     @listeners_for[32m=[0m[32m#<Concurrent::Map:0x000055a4577bd508 entries=5 default_proc=nil>[0m,
+     @other_subscribers[32m=[0m[],
+     @string_subscribers[32m=[0m
+      {[31m[1;31m"[0m[31mbacktrace_cleaner.active_record[1;31m"[0m[31m[0m=>
+        [[32m#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x000055a45769baa8[0m
+          @can_publish[32m=[0m[1;36mfalse[0m,
+          @delegate[32m=[0m
+           [32m#<ActiveRecord::LogSubscriber:0x000055a4576b31a8[0m
+            @patterns[32m=[0m
+             {[31m[1;31m"[0m[31mbacktrace_cleaner.active_record[1;31m"[0m[31m[0m=>
+               [32m#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x000055a45769baa8[0m ...[32m>[0m,
+              [31m[1;31m"[0m[31mbacktrace_cleaner=.active_record[1;31m"[0m[31m[0m=>
+               [32m#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x000055a45769b760[0m
+                @can_publish[32m=[0m[1;36mfalse[0m,
+                @delegate[32m=[0m[32m#<ActiveRecord::LogSubscriber:0x000055a4576b31a8[0m ...[32m>[0m,
+                @pattern[32m=[0m[31m[1;31m"[0m[31mbacktrace_cleaner=.active_record[1;31m"[0m[31m[0m[32m>[0m,
+              [31m[1;31m"[0m[31mbacktrace_cleaner?.active_record[1;31m"[0m[31m[0m=>
+               [32m#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x000055a45769b2d8[0m
+                @can_publish[32m=[0m[1;36mfalse[0m,
+                @delegate[32m=[0m[32m#<ActiveRecord::LogSubscriber:0x000055a4576b31a8[0m ...[32m>[0m,
+                @pattern[32m=[0m[31m[1;31m"[0m[31mbacktrace_cleaner?.active_record[1;31m"[0m[31m[0m[32m>[0m,
+              [31m[1;31m"[0m[31msql.active_record[1;31m"[0m[31m[0m=>
+               [32m#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x000055a45769b008[0m
+                @can_publish[32m=[0m[1;36mfalse[0m,
+                @delegate[32m=[0m[32m#<ActiveRecord::LogSubscriber:0x000055a4576b31a8[0m ...[32m>[0m,
+                @pattern[32m=[0m[31m[1;31m"[0m[31msql.active_record[1;31m"[0m[31m[0m[32m>[0m},
+            @queue_key[32m=[0m[31m[1;31m"[0m[31mActiveRecord::LogSubscriber-11460[1;31m"[0m[31m[0m[32m>[0m,
+          @pattern[32m=[0m[31m[1;31m"[0m[31mbacktrace_cleaner.active_record[1;31m"[0m[31m[0m[32m>[0m],
+       [31m[1;31m"[0m[31mbacktrace_cleaner=.active_record[1;31m"[0m[31m[0m=>
+        [[32m#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x000055a45769b760[0m
+          @can_publish[32m=[0m[1;36mfalse[0m,
+          @delegate[32m=[0m
+           [32m#<ActiveRecord::LogSubscriber:0x000055a4576b31a8[0m
+            @patterns[32m=[0m
+             {[31m[1;31m"[0m[31mbacktrace_cleaner.active_record[1;31m"[0m[31m[0m=>
+               [32m#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x000055a45769baa8[0m
+                @can_publish[32m=[0m[1;36mfalse[0m,
+                @delegate[32m=[0m[32m#<ActiveRecord::LogSubscriber:0x000055a4576b31a8[0m ...[32m>[0m,
+                @pattern[32m=[0m[31m[1;31m"[0m[31mbacktrace_cleaner.active_record[1;31m"[0m[31m[0m[32m>[0m,
+              [31m[1;31m"[0m[31mbacktrace_cleaner=.active_record[1;31m"[0m[31m[0m=>
+               [32m#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x000055a45769b760[0m ...[32m>[0m,
+              [31m[1;31m"[0m[31mbacktrace_cleaner?.active_record[1;31m"[0m[31m[0m=>
+               [32m#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x000055a45769b2d8[0m
+                @can_publish[32m=[0m[1;36mfalse[0m,
+                @delegate[32m=[0m[32m#<ActiveRecord::LogSubscriber:0x000055a4576b31a8[0m ...[32m>[0m,
+                @pattern[32m=[0m[31m[1;31m"[0m[31mbacktrace_cleaner?.active_record[1;31m"[0m[31m[0m[32m>[0m,
+              [31m[1;31m"[0m[31msql.active_record[1;31m"[0m[31m[0m=>
+               [32m#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x000055a45769b008[0m
+                @can_publish[32m=[0m[1;36mfalse[0m,
+                @delegate[32m=[0m[32m#<ActiveRecord::LogSubscriber:0x000055a4576b31a8[0m ...[32m>[0m,
+                @pattern[32m=[0m[31m[1;31m"[0m[31msql.active_record[1;31m"[0m[31m[0m[32m>[0m},
+            @queue_key[32m=[0m[31m[1;31m"[0m[31mActiveRecord::LogSubscriber-11460[1;31m"[0m[31m[0m[32m>[0m,
+          @pattern[32m=[0m[31m[1;31m"[0m[31mbacktrace_cleaner=.active_record[1;31m"[0m[31m[0m[32m>[0m],
+       [31m[1;31m"[0m[31mbacktrace_cleaner?.active_record[1;31m"[0m[31m[0m=>
+        [[32m#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x000055a45769b2d8[0m
+          @can_publish[32m=[0m[1;36mfalse[0m,
+          @delegate[32m=[0m
+           [32m#<ActiveRecord::LogSubscriber:0x000055a4576b31a8[0m
+            @patterns[32m=[0m
+             {[31m[1;31m"[0m[31mbacktrace_cleaner.active_record[1;31m"[0m[31m[0m=>
+               [32m#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x000055a45769baa8[0m
+                @can_publish[32m=[0m[1;36mfalse[0m,
+                @delegate[32m=[0m[32m#<ActiveRecord::LogSubscriber:0x000055a4576b31a8[0m ...[32m>[0m,
+                @pattern[32m=[0m[31m[1;31m"[0m[31mbacktrace_cleaner.active_record[1;31m"[0m[31m[0m[32m>[0m,
+              [31m[1;31m"[0m[31mbacktrace_cleaner=.active_record[1;31m"[0m[31m[0m=>
+               [32m#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x000055a45769b760[0m
+                @can_publish[32m=[0m[1;36mfalse[0m,
+                @delegate[32m=[0m[32m#<ActiveRecord::LogSubscriber:0x000055a4576b31a8[0m ...[32m>[0m,
+                @pattern[32m=[0m[31m[1;31m"[0m[31mbacktrace_cleaner=.active_record[1;31m"[0m[31m[0m[32m>[0m,
+              [31m[1;31m"[0m[31mbacktrace_cleaner?.active_record[1;31m"[0m[31m[0m=>
+               [32m#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x000055a45769b2d8[0m ...[32m>[0m,
+              [31m[1;31m"[0m[31msql.active_record[1;31m"[0m[31m[0m=>
+               [32m#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x000055a45769b008[0m
+                @can_publish[32m=[0m[1;36mfalse[0m,
+                @delegate[32m=[0m[32m#<ActiveRecord::LogSubscriber:0x000055a4576b31a8[0m ...[32m>[0m,
+                @pattern[32m=[0m[31m[1;31m"[0m[31msql.active_record[1;31m"[0m[31m[0m[32m>[0m},
+            @queue_key[32m=[0m[31m[1;31m"[0m[31mActiveRecord::LogSubscriber-11460[1;31m"[0m[31m[0m[32m>[0m,
+          @pattern[32m=[0m[31m[1;31m"[0m[31mbacktrace_cleaner?.active_record[1;31m"[0m[31m[0m[32m>[0m],
+       [31m[1;31m"[0m[31msql.active_record[1;31m"[0m[31m[0m=>
+        [[32m#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x000055a45769b008[0m
+          @can_publish[32m=[0m[1;36mfalse[0m,
+          @delegate[32m=[0m
+           [32m#<ActiveRecord::LogSubscriber:0x000055a4576b31a8[0m
+            @patterns[32m=[0m
+             {[31m[1;31m"[0m[31mbacktrace_cleaner.active_record[1;31m"[0m[31m[0m=>
+               [32m#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x000055a45769baa8[0m
+                @can_publish[32m=[0m[1;36mfalse[0m,
+                @delegate[32m=[0m[32m#<ActiveRecord::LogSubscriber:0x000055a4576b31a8[0m ...[32m>[0m,
+                @pattern[32m=[0m[31m[1;31m"[0m[31mbacktrace_cleaner.active_record[1;31m"[0m[31m[0m[32m>[0m,
+              [31m[1;31m"[0m[31mbacktrace_cleaner=.active_record[1;31m"[0m[31m[0m=>
+               [32m#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x000055a45769b760[0m
+                @can_publish[32m=[0m[1;36mfalse[0m,
+                @delegate[32m=[0m[32m#<ActiveRecord::LogSubscriber:0x000055a4576b31a8[0m ...[32m>[0m,
+                @pattern[32m=[0m[31m[1;31m"[0m[31mbacktrace_cleaner=.active_record[1;31m"[0m[31m[0m[32m>[0m,
+              [31m[1;31m"[0m[31mbacktrace_cleaner?.active_record[1;31m"[0m[31m[0m=>
+               [32m#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x000055a45769b2d8[0m
+                @can_publish[32m=[0m[1;36mfalse[0m,
+                @delegate[32m=[0m[32m#<ActiveRecord::LogSubscriber:0x000055a4576b31a8[0m ...[32m>[0m,
+                @pattern[32m=[0m[31m[1;31m"[0m[31mbacktrace_cleaner?.active_record[1;31m"[0m[31m[0m[32m>[0m,
+              [31m[1;31m"[0m[31msql.active_record[1;31m"[0m[31m[0m=>[32m#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x000055a45769b008[0m ...[32m>[0m},
+            @queue_key[32m=[0m[31m[1;31m"[0m[31mActiveRecord::LogSubscriber-11460[1;31m"[0m[31m[0m[32m>[0m,
+          @pattern[32m=[0m[31m[1;31m"[0m[31msql.active_record[1;31m"[0m[31m[0m[32m>[0m,
+         [32m#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x000055a4597fac80[0m
+          @can_publish[32m=[0m[1;36mfalse[0m,
+          @delegate[32m=[0m[32m#<ActiveRecord::ExplainSubscriber:0x000055a4597fad20[0m[32m>[0m,
+          @pattern[32m=[0m[31m[1;31m"[0m[31msql.active_record[1;31m"[0m[31m[0m[32m>[0m],
+       [31m[1;31m"[0m[31mrender_template.action_view[1;31m"[0m[31m[0m=>
+        [[32m#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x000055a4575339e0[0m
+          @can_publish[32m=[0m[1;36mfalse[0m,
+          @delegate[32m=[0m
+           [32m#<ActionView::LogSubscriber:0x00007ff8d8068190[0m
+            @patterns[32m=[0m
+             {[31m[1;31m"[0m[31mrender_template.action_view[1;31m"[0m[31m[0m=>[32m#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x000055a4575339e0[0m ...[32m>[0m,
+              [31m[1;31m"[0m[31mrender_collection.action_view[1;31m"[0m[31m[0m=>
+               [32m#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x000055a457533670[0m
+                @can_publish[32m=[0m[1;36mfalse[0m,
+                @delegate[32m=[0m[32m#<ActionView::LogSubscriber:0x00007ff8d8068190[0m ...[32m>[0m,
+                @pattern[32m=[0m[31m[1;31m"[0m[31mrender_collection.action_view[1;31m"[0m[31m[0m[32m>[0m,
+              [31m[1;31m"[0m[31mlogger.action_view[1;31m"[0m[31m[0m=>
+               [32m#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x000055a4575332b0[0m
+                @can_publish[32m=[0m[1;36mfalse[0m,
+                @delegate[32m=[0m[32m#<ActionView::LogSubscriber:0x00007ff8d8068190[0m ...[32m>[0m,
+                @pattern[32m=[0m[31m[1;31m"[0m[31mlogger.action_view[1;31m"[0m[31m[0m[32m>[0m,
+              [31m[1;31m"[0m[31mrender_partial.action_view[1;31m"[0m[31m[0m=>
+               [32m#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x000055a457533058[0m
+                @can_publish[32m=[0m[1;36mfalse[0m,
+                @delegate[32m=[0m[32m#<ActionView::LogSubscriber:0x00007ff8d8068190[0m ...[32m>[0m,
+                @pattern[32m=[0m[31m[1;31m"[0m[31mrender_partial.action_view[1;31m"[0m[31m[0m[32m>[0m},
+            @queue_key[32m=[0m[31m[1;31m"[0m[31mActionView::LogSubscriber-11820[1;31m"[0m[31m[0m,
+            @root[32m=[0m[1;36mnil[0m[32m>[0m,
+          @pattern[32m=[0m[31m[1;31m"[0m[31mrender_template.action_view[1;31m"[0m[31m[0m[32m>[0m],
+       [31m[1;31m"[0m[31mrender_collection.action_view[1;31m"[0m[31m[0m=>
+        [[32m#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x000055a457533670[0m
+          @can_publish[32m=[0m[1;36mfalse[0m,
+          @delegate[32m=[0m
+           [32m#<ActionView::LogSubscriber:0x00007ff8d8068190[0m
+            @patterns[32m=[0m
+             {[31m[1;31m"[0m[31mrender_template.action_view[1;31m"[0m[31m[0m=>
+               [32m#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x000055a4575339e0[0m
+                @can_publish[32m=[0m[1;36mfalse[0m,
+                @delegate[32m=[0m[32m#<ActionView::LogSubscriber:0x00007ff8d8068190[0m ...[32m>[0m,
+                @pattern[32m=[0m[31m[1;31m"[0m[31mrender_template.action_view[1;31m"[0m[31m[0m[32m>[0m,
+              [31m[1;31m"[0m[31mrender_collection.action_view[1;31m"[0m[31m[0m=>
+               [32m#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x000055a457533670[0m ...[32m>[0m,
+              [31m[1;31m"[0m[31mlogger.action_view[1;31m"[0m[31m[0m=>
+               [32m#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x000055a4575332b0[0m
+                @can_publish[32m=[0m[1;36mfalse[0m,
+                @delegate[32m=[0m[32m#<ActionView::LogSubscriber:0x00007ff8d8068190[0m ...[32m>[0m,
+                @pattern[32m=[0m[31m[1;31m"[0m[31mlogger.action_view[1;31m"[0m[31m[0m[32m>[0m,
+              [31m[1;31m"[0m[31mrender_partial.action_view[1;31m"[0m[31m[0m=>
+               [32m#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x000055a457533058[0m
+                @can_publish[32m=[0m[1;36mfalse[0m,
+                @delegate[32m=[0m[32m#<ActionView::LogSubscriber:0x00007ff8d8068190[0m ...[32m>[0m,
+                @pattern[32m=[0m[31m[1;31m"[0m[31mrender_partial.action_view[1;31m"[0m[31m[0m[32m>[0m},
+            @queue_key[32m=[0m[31m[1;31m"[0m[31mActionView::LogSubscriber-11820[1;31m"[0m[31m[0m,
+            @root[32m=[0m[1;36mnil[0m[32m>[0m,
+          @pattern[32m=[0m[31m[1;31m"[0m[31mrender_collection.action_view[1;31m"[0m[31m[0m[32m>[0m],
+       [31m[1;31m"[0m[31mlogger.action_view[1;31m"[0m[31m[0m=>
+        [[32m#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x000055a4575332b0[0m
+          @can_publish[32m=[0m[1;36mfalse[0m,
+          @delegate[32m=[0m
+           [32m#<ActionView::LogSubscriber:0x00007ff8d8068190[0m
+            @patterns[32m=[0m
+             {[31m[1;31m"[0m[31mrender_template.action_view[1;31m"[0m[31m[0m=>
+               [32m#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x000055a4575339e0[0m
+                @can_publish[32m=[0m[1;36mfalse[0m,
+                @delegate[32m=[0m[32m#<ActionView::LogSubscriber:0x00007ff8d8068190[0m ...[32m>[0m,
+                @pattern[32m=[0m[31m[1;31m"[0m[31mrender_template.action_view[1;31m"[0m[31m[0m[32m>[0m,
+              [31m[1;31m"[0m[31mrender_collection.action_view[1;31m"[0m[31m[0m=>
+               [32m#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x000055a457533670[0m
+                @can_publish[32m=[0m[1;36mfalse[0m,
+                @delegate[32m=[0m[32m#<ActionView::LogSubscriber:0x00007ff8d8068190[0m ...[32m>[0m,
+                @pattern[32m=[0m[31m[1;31m"[0m[31mrender_collection.action_view[1;31m"[0m[31m[0m[32m>[0m,
+              [31m[1;31m"[0m[31mlogger.action_view[1;31m"[0m[31m[0m=>[32m#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x000055a4575332b0[0m ...[32m>[0m,
+              [31m[1;31m"[0m[31mrender_partial.action_view[1;31m"[0m[31m[0m=>
+               [32m#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x000055a457533058[0m
+                @can_publish[32m=[0m[1;36mfalse[0m,
+                @delegate[32m=[0m[32m#<ActionView::LogSubscriber:0x00007ff8d8068190[0m ...[32m>[0m,
+                @pattern[32m=[0m[31m[1;31m"[0m[31mrender_partial.action_view[1;31m"[0m[31m[0m[32m>[0m},
+            @queue_key[32m=[0m[31m[1;31m"[0m[31mActionView::LogSubscriber-11820[1;31m"[0m[31m[0m,
+            @root[32m=[0m[1;36mnil[0m[32m>[0m,
+          @pattern[32m=[0m[31m[1;31m"[0m[31mlogger.action_view[1;31m"[0m[31m[0m[32m>[0m],
+       [31m[1;31m"[0m[31mrender_partial.action_view[1;31m"[0m[31m[0m=>
+        [[32m#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x000055a457533058[0m
+          @can_publish[32m=[0m[1;36mfalse[0m,
+          @delegate[32m=[0m
+           [32m#<ActionView::LogSubscriber:0x00007ff8d8068190[0m
+            @patterns[32m=[0m
+             {[31m[1;31m"[0m[31mrender_template.action_view[1;31m"[0m[31m[0m=>
+               [32m#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x000055a4575339e0[0m
+                @can_publish[32m=[0m[1;36mfalse[0m,
+                @delegate[32m=[0m[32m#<ActionView::LogSubscriber:0x00007ff8d8068190[0m ...[32m>[0m,
+                @pattern[32m=[0m[31m[1;31m"[0m[31mrender_template.action_view[1;31m"[0m[31m[0m[32m>[0m,
+              [31m[1;31m"[0m[31mrender_collection.action_view[1;31m"[0m[31m[0m=>
+               [32m#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x000055a457533670[0m
+                @can_publish[32m=[0m[1;36mfalse[0m,
+                @delegate[32m=[0m[32m#<ActionView::LogSubscriber:0x00007ff8d8068190[0m ...[32m>[0m,
+                @pattern[32m=[0m[31m[1;31m"[0m[31mrender_collection.action_view[1;31m"[0m[31m[0m[32m>[0m,
+              [31m[1;31m"[0m[31mlogger.action_view[1;31m"[0m[31m[0m=>
+               [32m#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x000055a4575332b0[0m
+                @can_publish[32m=[0m[1;36mfalse[0m,
+                @delegate[32m=[0m[32m#<ActionView::LogSubscriber:0x00007ff8d8068190[0m ...[32m>[0m,
+                @pattern[32m=[0m[31m[1;31m"[0m[31mlogger.action_view[1;31m"[0m[31m[0m[32m>[0m,
+              [31m[1;31m"[0m[31mrender_partial.action_view[1;31m"[0m[31m[0m=>[32m#<ActiveSupport::Notifications::Fanout::Subscribers::Evented:0x000055a457533058[0m ...[32m>[0m},
+            @queue_key[32m=[0m[31m[1;31m"[0m[31mActionView::LogSubscriber-11820[1;31m"[0m[31m[0m,
+            @root[32m=[0m[1;36mnil[0m[32m>[0m,
+          @pattern[32m=[0m[31m[1;31m"[0m[31mrender_partial.action_view[1;31m"[0m[31m[0m[32m>[0m],
+       [31m[1;31m"[0m[31mload_config_initializer.railties[1;31m"[0m[31m[0m=>[],
+       [31m[1;31m"[0m[31mprocess_middleware.action_dispatch[1;31m"[0m[31m[0m=>[],
+       [31m[1;31m"[0m[31m!connection.active_record[1;31m"[0m[31m[0m=>[],
+       [31m[1;31m"[0m[31minstantiation.active_record[1;31m"[0m[31m[0m=>[]}[32m>[0m[32m>[0m,
+ @local_tz[32m=[0m[31m[1;31m"[0m[31mUTC[1;31m"[0m[31m[0m,
+ @lock[32m=[0m[32m#<ActiveSupport::Concurrency::LoadInterlockAwareMonitor:0x00007ff8d87ee400[0m[32m>[0m,
+ @logger[32m=[0m
+  [32m#<ActiveSupport::Logger:0x000055a4593dde68[0m
+   @default_formatter[32m=[0m[32m#<Logger::Formatter:0x000055a4593de0e8[0m @datetime_format[32m=[0m[1;36mnil[0m[32m>[0m,
+   @formatter[32m=[0m
+    [32m#<ActiveSupport::Logger::SimpleFormatter:0x000055a4593dddc8[0m
+     @datetime_format[32m=[0m[1;36mnil[0m,
+     @thread_key[32m=[0m[31m[1;31m"[0m[31mactivesupport_tagged_logging_tags:14680[1;31m"[0m[31m[0m[32m>[0m,
+   @level[32m=[0m[1;34m0[0m,
+   @logdev[32m=[0m
+    [32m#<Logger::LogDevice:0x000055a4593de048[0m
+     @binmode[32m=[0m[1;36mfalse[0m,
+     @dev[32m=[0m[32m#<File:/home/qazal/Desktop/basic_rail/awesome_answers_2020/log/development.log>[0m,
+     @filename[32m=[0m[31m[1;31m"[0m[31m/home/qazal/Desktop/basic_rail/awesome_answers_2020/log/development.log[1;31m"[0m[31m[0m,
+     @mon_data[32m=[0m[32m#<Monitor:0x000055a4593ddfa8[0m[32m>[0m,
+     @mon_data_owner_object_id[32m=[0m[1;34m10500[0m,
+     @shift_age[32m=[0m[1;34m0[0m,
+     @shift_period_suffix[32m=[0m[31m[1;31m"[0m[31m%Y%m%d[1;31m"[0m[31m[0m,
+     @shift_size[32m=[0m[1;34m1048576[0m[32m>[0m,
+   @progname[32m=[0m[1;36mnil[0m[32m>[0m,
+ @max_identifier_length[32m=[0m[1;34m63[0m,
+ @owner[32m=[0m[32m#<Thread:0x000055a456546eb0 run>[0m,
+ @pool[32m=[0m
+  [32m#<ActiveRecord::ConnectionAdapters::ConnectionPool:0x000055a459640048[0m
+   @automatic_reconnect[32m=[0m[1;36mtrue[0m,
+   @available[32m=[0m
+    [32m#<ActiveRecord::ConnectionAdapters::ConnectionPool::ConnectionLeasingQueue:0x000055a45962e938[0m
+     @cond[32m=[0m
+      [32m#<MonitorMixin::ConditionVariable:0x000055a45962e910[0m
+       @cond[32m=[0m[32m#<Thread::ConditionVariable:0x000055a45962e8c0[0m[32m>[0m,
+       @monitor[32m=[0m[32m#<Monitor:0x000055a45962fef0[0m[32m>[0m[32m>[0m,
+     @lock[32m=[0m[32m#<ActiveRecord::ConnectionAdapters::ConnectionPool:0x000055a459640048[0m ...[32m>[0m,
+     @num_waiting[32m=[0m[1;34m0[0m,
+     @queue[32m=[0m[][32m>[0m,
+   @checkout_timeout[32m=[0m[1;34m5[0m,
+   @connections[32m=[0m[[32m#<ActiveRecord::ConnectionAdapters::PostgreSQLAdapter:0x00007ff8d87f3978[0m ...[32m>[0m],
+   @idle_timeout[32m=[0m[1;35m300.0[0m,
+   @lock_thread[32m=[0m[1;36mfalse[0m,
+   @mon_data[32m=[0m[32m#<Monitor:0x000055a45962fef0[0m[32m>[0m,
+   @mon_data_owner_object_id[32m=[0m[1;34m14340[0m,
+   @now_connecting[32m=[0m[1;34m0[0m,
+   @query_cache_enabled[32m=[0m
+    [32m#<Concurrent::Map:0x000055a45962fe78 entries=0 default_proc=#<Proc:0x000055a45962ed70 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/connection_adapters/abstract/query_cache.rb:32>>[0m,
+   @reaper[32m=[0m
+    [32m#<ActiveRecord::ConnectionAdapters::ConnectionPool::Reaper:0x000055a45962e668[0m
+     @frequency[32m=[0m[1;35m60.0[0m,
+     @pool[32m=[0m[32m#<ActiveRecord::ConnectionAdapters::ConnectionPool:0x000055a459640048[0m ...[32m>[0m[32m>[0m,
+   @schema_cache[32m=[0m
+    [32m#<ActiveRecord::ConnectionAdapters::SchemaCache:0x00007ff8d87b5060[0m
+     @columns[32m=[0m
+      {[31m[1;31m"[0m[31mquestions[1;31m"[0m[31m[0m=>
+        [[32m#<ActiveRecord::ConnectionAdapters::PostgreSQL::Column:0x00007ff8d87aebc0[0m
+          @collation[32m=[0m[1;36mnil[0m,
+          @comment[32m=[0m[1;36mnil[0m,
+          @default[32m=[0m[1;36mnil[0m,
+          @default_function[32m=[0m[31m[1;31m"[0m[31mnextval('questions_id_seq'::regclass)[1;31m"[0m[31m[0m,
+          @name[32m=[0m[31m[1;31m"[0m[31mid[1;31m"[0m[31m[0m,
+          @null[32m=[0m[1;36mfalse[0m,
+          @serial[32m=[0m[1;36mtrue[0m,
+          @sql_type_metadata[32m=[0m
+           [32m#<ActiveRecord::ConnectionAdapters::SqlTypeMetadata:0x00007ff8d87b60f0[0m
+            @limit[32m=[0m[1;34m8[0m,
+            @precision[32m=[0m[1;36mnil[0m,
+            @scale[32m=[0m[1;36mnil[0m,
+            @sql_type[32m=[0m[31m[1;31m"[0m[31mbigint[1;31m"[0m[31m[0m,
+            @type[32m=[0m[33m:integer[0m[32m>[0m[32m>[0m,
+         [32m#<ActiveRecord::ConnectionAdapters::PostgreSQL::Column:0x00007ff8d87ae008[0m
+          @collation[32m=[0m[1;36mnil[0m,
+          @comment[32m=[0m[1;36mnil[0m,
+          @default[32m=[0m[1;36mnil[0m,
+          @default_function[32m=[0m[1;36mnil[0m,
+          @name[32m=[0m[31m[1;31m"[0m[31mtitle[1;31m"[0m[31m[0m,
+          @null[32m=[0m[1;36mtrue[0m,
+          @serial[32m=[0m[1;36mnil[0m,
+          @sql_type_metadata[32m=[0m
+           [32m#<ActiveRecord::ConnectionAdapters::SqlTypeMetadata:0x00007ff8d87ae300[0m
+            @limit[32m=[0m[1;36mnil[0m,
+            @precision[32m=[0m[1;36mnil[0m,
+            @scale[32m=[0m[1;36mnil[0m,
+            @sql_type[32m=[0m[31m[1;31m"[0m[31mcharacter varying[1;31m"[0m[31m[0m,
+            @type[32m=[0m[33m:string[0m[32m>[0m[32m>[0m,
+         [32m#<ActiveRecord::ConnectionAdapters::PostgreSQL::Column:0x00007ff8d87ada40[0m
+          @collation[32m=[0m[1;36mnil[0m,
+          @comment[32m=[0m[1;36mnil[0m,
+          @default[32m=[0m[1;36mnil[0m,
+          @default_function[32m=[0m[1;36mnil[0m,
+          @name[32m=[0m[31m[1;31m"[0m[31mbody[1;31m"[0m[31m[0m,
+          @null[32m=[0m[1;36mtrue[0m,
+          @serial[32m=[0m[1;36mnil[0m,
+          @sql_type_metadata[32m=[0m
+           [32m#<ActiveRecord::ConnectionAdapters::SqlTypeMetadata:0x00007ff8d87adb08[0m
+            @limit[32m=[0m[1;36mnil[0m,
+            @precision[32m=[0m[1;36mnil[0m,
+            @scale[32m=[0m[1;36mnil[0m,
+            @sql_type[32m=[0m[31m[1;31m"[0m[31mtext[1;31m"[0m[31m[0m,
+            @type[32m=[0m[33m:text[0m[32m>[0m[32m>[0m,
+         [32m#<ActiveRecord::ConnectionAdapters::PostgreSQL::Column:0x00007ff8d87ad360[0m
+          @collation[32m=[0m[1;36mnil[0m,
+          @comment[32m=[0m[1;36mnil[0m,
+          @default[32m=[0m[1;36mnil[0m,
+          @default_function[32m=[0m[1;36mnil[0m,
+          @name[32m=[0m[31m[1;31m"[0m[31mcreated_at[1;31m"[0m[31m[0m,
+          @null[32m=[0m[1;36mfalse[0m,
+          @serial[32m=[0m[1;36mnil[0m,
+          @sql_type_metadata[32m=[0m
+           [32m#<ActiveRecord::ConnectionAdapters::SqlTypeMetadata:0x00007ff8d87ad428[0m
+            @limit[32m=[0m[1;36mnil[0m,
+            @precision[32m=[0m[1;34m6[0m,
+            @scale[32m=[0m[1;36mnil[0m,
+            @sql_type[32m=[0m[31m[1;31m"[0m[31mtimestamp(6) without time zone[1;31m"[0m[31m[0m,
+            @type[32m=[0m[33m:datetime[0m[32m>[0m[32m>[0m,
+         [32m#<ActiveRecord::ConnectionAdapters::PostgreSQL::Column:0x00007ff8d87ad040[0m
+          @collation[32m=[0m[1;36mnil[0m,
+          @comment[32m=[0m[1;36mnil[0m,
+          @default[32m=[0m[1;36mnil[0m,
+          @default_function[32m=[0m[1;36mnil[0m,
+          @name[32m=[0m[31m[1;31m"[0m[31mupdated_at[1;31m"[0m[31m[0m,
+          @null[32m=[0m[1;36mfalse[0m,
+          @serial[32m=[0m[1;36mnil[0m,
+          @sql_type_metadata[32m=[0m
+           [32m#<ActiveRecord::ConnectionAdapters::SqlTypeMetadata:0x00007ff8d87ad158[0m
+            @limit[32m=[0m[1;36mnil[0m,
+            @precision[32m=[0m[1;34m6[0m,
+            @scale[32m=[0m[1;36mnil[0m,
+            @sql_type[32m=[0m[31m[1;31m"[0m[31mtimestamp(6) without time zone[1;31m"[0m[31m[0m,
+            @type[32m=[0m[33m:datetime[0m[32m>[0m[32m>[0m,
+         [32m#<ActiveRecord::ConnectionAdapters::PostgreSQL::Column:0x00007ff8d87ac7f8[0m
+          @collation[32m=[0m[1;36mnil[0m,
+          @comment[32m=[0m[1;36mnil[0m,
+          @default[32m=[0m[1;36mnil[0m,
+          @default_function[32m=[0m[1;36mnil[0m,
+          @name[32m=[0m[31m[1;31m"[0m[31mview_count[1;31m"[0m[31m[0m,
+          @null[32m=[0m[1;36mtrue[0m,
+          @serial[32m=[0m[1;36mnil[0m,
+          @sql_type_metadata[32m=[0m
+           [32m#<ActiveRecord::ConnectionAdapters::SqlTypeMetadata:0x00007ff8d87ac938[0m
+            @limit[32m=[0m[1;34m4[0m,
+            @precision[32m=[0m[1;36mnil[0m,
+            @scale[32m=[0m[1;36mnil[0m,
+            @sql_type[32m=[0m[31m[1;31m"[0m[31minteger[1;31m"[0m[31m[0m,
+            @type[32m=[0m[33m:integer[0m[32m>[0m[32m>[0m]},
+     @columns_hash[32m=[0m
+      {[31m[1;31m"[0m[31mquestions[1;31m"[0m[31m[0m=>
+        {[31m[1;31m"[0m[31mid[1;31m"[0m[31m[0m=>
+          [32m#<ActiveRecord::ConnectionAdapters::PostgreSQL::Column:0x00007ff8d87aebc0[0m
+           @collation[32m=[0m[1;36mnil[0m,
+           @comment[32m=[0m[1;36mnil[0m,
+           @default[32m=[0m[1;36mnil[0m,
+           @default_function[32m=[0m[31m[1;31m"[0m[31mnextval('questions_id_seq'::regclass)[1;31m"[0m[31m[0m,
+           @name[32m=[0m[31m[1;31m"[0m[31mid[1;31m"[0m[31m[0m,
+           @null[32m=[0m[1;36mfalse[0m,
+           @serial[32m=[0m[1;36mtrue[0m,
+           @sql_type_metadata[32m=[0m
+            [32m#<ActiveRecord::ConnectionAdapters::SqlTypeMetadata:0x00007ff8d87b60f0[0m
+             @limit[32m=[0m[1;34m8[0m,
+             @precision[32m=[0m[1;36mnil[0m,
+             @scale[32m=[0m[1;36mnil[0m,
+             @sql_type[32m=[0m[31m[1;31m"[0m[31mbigint[1;31m"[0m[31m[0m,
+             @type[32m=[0m[33m:integer[0m[32m>[0m[32m>[0m,
+         [31m[1;31m"[0m[31mtitle[1;31m"[0m[31m[0m=>
+          [32m#<ActiveRecord::ConnectionAdapters::PostgreSQL::Column:0x00007ff8d87ae008[0m
+           @collation[32m=[0m[1;36mnil[0m,
+           @comment[32m=[0m[1;36mnil[0m,
+           @default[32m=[0m[1;36mnil[0m,
+           @default_function[32m=[0m[1;36mnil[0m,
+           @name[32m=[0m[31m[1;31m"[0m[31mtitle[1;31m"[0m[31m[0m,
+           @null[32m=[0m[1;36mtrue[0m,
+           @serial[32m=[0m[1;36mnil[0m,
+           @sql_type_metadata[32m=[0m
+            [32m#<ActiveRecord::ConnectionAdapters::SqlTypeMetadata:0x00007ff8d87ae300[0m
+             @limit[32m=[0m[1;36mnil[0m,
+             @precision[32m=[0m[1;36mnil[0m,
+             @scale[32m=[0m[1;36mnil[0m,
+             @sql_type[32m=[0m[31m[1;31m"[0m[31mcharacter varying[1;31m"[0m[31m[0m,
+             @type[32m=[0m[33m:string[0m[32m>[0m[32m>[0m,
+         [31m[1;31m"[0m[31mbody[1;31m"[0m[31m[0m=>
+          [32m#<ActiveRecord::ConnectionAdapters::PostgreSQL::Column:0x00007ff8d87ada40[0m
+           @collation[32m=[0m[1;36mnil[0m,
+           @comment[32m=[0m[1;36mnil[0m,
+           @default[32m=[0m[1;36mnil[0m,
+           @default_function[32m=[0m[1;36mnil[0m,
+           @name[32m=[0m[31m[1;31m"[0m[31mbody[1;31m"[0m[31m[0m,
+           @null[32m=[0m[1;36mtrue[0m,
+           @serial[32m=[0m[1;36mnil[0m,
+           @sql_type_metadata[32m=[0m
+            [32m#<ActiveRecord::ConnectionAdapters::SqlTypeMetadata:0x00007ff8d87adb08[0m
+             @limit[32m=[0m[1;36mnil[0m,
+             @precision[32m=[0m[1;36mnil[0m,
+             @scale[32m=[0m[1;36mnil[0m,
+             @sql_type[32m=[0m[31m[1;31m"[0m[31mtext[1;31m"[0m[31m[0m,
+             @type[32m=[0m[33m:text[0m[32m>[0m[32m>[0m,
+         [31m[1;31m"[0m[31mcreated_at[1;31m"[0m[31m[0m=>
+          [32m#<ActiveRecord::ConnectionAdapters::PostgreSQL::Column:0x00007ff8d87ad360[0m
+           @collation[32m=[0m[1;36mnil[0m,
+           @comment[32m=[0m[1;36mnil[0m,
+           @default[32m=[0m[1;36mnil[0m,
+           @default_function[32m=[0m[1;36mnil[0m,
+           @name[32m=[0m[31m[1;31m"[0m[31mcreated_at[1;31m"[0m[31m[0m,
+           @null[32m=[0m[1;36mfalse[0m,
+           @serial[32m=[0m[1;36mnil[0m,
+           @sql_type_metadata[32m=[0m
+            [32m#<ActiveRecord::ConnectionAdapters::SqlTypeMetadata:0x00007ff8d87ad428[0m
+             @limit[32m=[0m[1;36mnil[0m,
+             @precision[32m=[0m[1;34m6[0m,
+             @scale[32m=[0m[1;36mnil[0m,
+             @sql_type[32m=[0m[31m[1;31m"[0m[31mtimestamp(6) without time zone[1;31m"[0m[31m[0m,
+             @type[32m=[0m[33m:datetime[0m[32m>[0m[32m>[0m,
+         [31m[1;31m"[0m[31mupdated_at[1;31m"[0m[31m[0m=>
+          [32m#<ActiveRecord::ConnectionAdapters::PostgreSQL::Column:0x00007ff8d87ad040[0m
+           @collation[32m=[0m[1;36mnil[0m,
+           @comment[32m=[0m[1;36mnil[0m,
+           @default[32m=[0m[1;36mnil[0m,
+           @default_function[32m=[0m[1;36mnil[0m,
+           @name[32m=[0m[31m[1;31m"[0m[31mupdated_at[1;31m"[0m[31m[0m,
+           @null[32m=[0m[1;36mfalse[0m,
+           @serial[32m=[0m[1;36mnil[0m,
+           @sql_type_metadata[32m=[0m
+            [32m#<ActiveRecord::ConnectionAdapters::SqlTypeMetadata:0x00007ff8d87ad158[0m
+             @limit[32m=[0m[1;36mnil[0m,
+             @precision[32m=[0m[1;34m6[0m,
+             @scale[32m=[0m[1;36mnil[0m,
+             @sql_type[32m=[0m[31m[1;31m"[0m[31mtimestamp(6) without time zone[1;31m"[0m[31m[0m,
+             @type[32m=[0m[33m:datetime[0m[32m>[0m[32m>[0m,
+         [31m[1;31m"[0m[31mview_count[1;31m"[0m[31m[0m=>
+          [32m#<ActiveRecord::ConnectionAdapters::PostgreSQL::Column:0x00007ff8d87ac7f8[0m
+           @collation[32m=[0m[1;36mnil[0m,
+           @comment[32m=[0m[1;36mnil[0m,
+           @default[32m=[0m[1;36mnil[0m,
+           @default_function[32m=[0m[1;36mnil[0m,
+           @name[32m=[0m[31m[1;31m"[0m[31mview_count[1;31m"[0m[31m[0m,
+           @null[32m=[0m[1;36mtrue[0m,
+           @serial[32m=[0m[1;36mnil[0m,
+           @sql_type_metadata[32m=[0m
+            [32m#<ActiveRecord::ConnectionAdapters::SqlTypeMetadata:0x00007ff8d87ac938[0m
+             @limit[32m=[0m[1;34m4[0m,
+             @precision[32m=[0m[1;36mnil[0m,
+             @scale[32m=[0m[1;36mnil[0m,
+             @sql_type[32m=[0m[31m[1;31m"[0m[31minteger[1;31m"[0m[31m[0m,
+             @type[32m=[0m[33m:integer[0m[32m>[0m[32m>[0m}},
+     @connection[32m=[0m[32m#<ActiveRecord::ConnectionAdapters::PostgreSQLAdapter:0x00007ff8d87f3978[0m ...[32m>[0m,
+     @data_sources[32m=[0m{[31m[1;31m"[0m[31mquestions[1;31m"[0m[31m[0m=>[1;36mtrue[0m, [31m[1;31m"[0m[31mschema_migrations[1;31m"[0m[31m[0m=>[1;36mtrue[0m, [31m[1;31m"[0m[31mar_internal_metadata[1;31m"[0m[31m[0m=>[1;36mtrue[0m},
+     @indexes[32m=[0m{},
+     @primary_keys[32m=[0m{[31m[1;31m"[0m[31mquestions[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31mid[1;31m"[0m[31m[0m}[32m>[0m,
+   @size[32m=[0m[1;34m5[0m,
+   @spec[32m=[0m
+    [32m#<ActiveRecord::ConnectionAdapters::ConnectionSpecification:0x000055a459640638[0m
+     @adapter_method[32m=[0m[31m[1;31m"[0m[31mpostgresql_connection[1;31m"[0m[31m[0m,
+     @config[32m=[0m{[33m:adapter[0m=>[31m[1;31m"[0m[31mpostgresql[1;31m"[0m[31m[0m, [33m:encoding[0m=>[31m[1;31m"[0m[31municode[1;31m"[0m[31m[0m, [33m:pool[0m=>[1;34m5[0m, [33m:database[0m=>[31m[1;31m"[0m[31mawesome_answers_2020_development[1;31m"[0m[31m[0m},
+     @name[32m=[0m[31m[1;31m"[0m[31mprimary[1;31m"[0m[31m[0m[32m>[0m,
+   @thread_cached_conns[32m=[0m[32m#<Concurrent::Map:0x000055a45962eca8 entries=1 default_proc=nil>[0m,
+   @threads_blocking_new_connections[32m=[0m[1;34m0[0m[32m>[0m,
+ @prepared_statements[32m=[0m[1;36mtrue[0m,
+ @query_cache[32m=[0m{},
+ @query_cache_enabled[32m=[0m[1;36mfalse[0m,
+ @schema_search_path[32m=[0m[31m[1;31m"[0m[31m[1;35m\"[0m[31m$user[1;35m\"[0m[31m, public[1;31m"[0m[31m[0m,
+ @statements[32m=[0m
+  [32m#<ActiveRecord::ConnectionAdapters::PostgreSQLAdapter::StatementPool:0x00007ff8d87ee4a0[0m
+   @cache[32m=[0m
+    {[1;34m61153[0m=>
+      {[31m[1;31m"[0m[31m[1;35m\"[0m[31m$user[1;35m\"[0m[31m, public-SELECT [1;35m\"[0m[31mquestions[1;35m\"[0m[31m.* FROM [1;35m\"[0m[31mquestions[1;35m\"[0m[31m LIMIT $1[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31ma1[1;31m"[0m[31m[0m,
+       [31m[1;31m"[0m[31m[1;35m\"[0m[31m$user[1;35m\"[0m[31m, public-SELECT [1;35m\"[0m[31mquestions[1;35m\"[0m[31m.* FROM [1;35m\"[0m[31mquestions[1;35m\"[0m[31m OFFSET $1[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31ma2[1;31m"[0m[31m[0m}},
+   @connection[32m=[0m[32m#<PG::Connection:0x00007ff8d87f81f8[0m[32m>[0m,
+   @counter[32m=[0m[1;34m2[0m,
+   @statement_limit[32m=[0m[1;34m1000[0m[32m>[0m,
+ @timestamp_decoder[32m=[0m[32m#<PG::TextDecoder::TimestampUtc:0x00007ff8d87e44c8 "timestamp"  oid=1114>[0m,
+ @transaction_manager[32m=[0m
+  [32m#<ActiveRecord::ConnectionAdapters::TransactionManager:0x00007ff8d87ee630[0m
+   @connection[32m=[0m[32m#<ActiveRecord::ConnectionAdapters::PostgreSQLAdapter:0x00007ff8d87f3978[0m ...[32m>[0m,
+   @has_unmaterialized_transactions[32m=[0m[1;36mfalse[0m,
+   @lazy_transactions_enabled[32m=[0m[1;36mtrue[0m,
+   @materializing_transactions[32m=[0m[1;36mfalse[0m,
+   @stack[32m=[0m[][32m>[0m,
+ @type_map[32m=[0m
+  [32m#<ActiveRecord::Type::HashLookupTypeMap:0x00007ff8d87e4270[0m
+   @cache[32m=[0m
+    [32m#<Concurrent::Map:0x00007ff8d87e4220 entries=10 default_proc=#<Proc:0x00007ff8d87e4130 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/type/type_map.rb:10>>[0m,
+   @mapping[32m=[0m
+    {[31m[1;31m"[0m[31mint2[1;31m"[0m[31m[0m=>
+      [32m#<Proc:0x00007ff8d87e5d00 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/type/type_map.rb:32>[0m,
+     [31m[1;31m"[0m[31mint4[1;31m"[0m[31m[0m=>
+      [32m#<Proc:0x00007ff8d87dfe00 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/type/type_map.rb:32>[0m,
+     [31m[1;31m"[0m[31mint8[1;31m"[0m[31m[0m=>
+      [32m#<Proc:0x00007ff8d87dfa90 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/type/type_map.rb:32>[0m,
+     [31m[1;31m"[0m[31moid[1;31m"[0m[31m[0m=>
+      [32m#<Proc:0x00007ff8d87df900 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/type/type_map.rb:32>[0m,
+     [31m[1;31m"[0m[31mfloat4[1;31m"[0m[31m[0m=>
+      [32m#<Proc:0x00007ff8d87df888 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/type/type_map.rb:32>[0m,
+     [31m[1;31m"[0m[31mfloat8[1;31m"[0m[31m[0m=>
+      [32m#<Proc:0x00007ff8d87df838 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/type/hash_lookup_type_map.rb:7>[0m,
+     [31m[1;31m"[0m[31mtext[1;31m"[0m[31m[0m=>
+      [32m#<Proc:0x00007ff8d87df7c0 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/type/type_map.rb:32>[0m,
+     [31m[1;31m"[0m[31mvarchar[1;31m"[0m[31m[0m=>
+      [32m#<Proc:0x00007ff8d87df770 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/connection_adapters/abstract_adapter.rb:673>[0m,
+     [31m[1;31m"[0m[31mchar[1;31m"[0m[31m[0m=>
+      [32m#<Proc:0x00007ff8d87df720 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/type/hash_lookup_type_map.rb:7>[0m,
+     [31m[1;31m"[0m[31mname[1;31m"[0m[31m[0m=>
+      [32m#<Proc:0x00007ff8d87df6d0 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/type/hash_lookup_type_map.rb:7>[0m,
+     [31m[1;31m"[0m[31mbpchar[1;31m"[0m[31m[0m=>
+      [32m#<Proc:0x00007ff8d87df680 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/type/hash_lookup_type_map.rb:7>[0m,
+     [31m[1;31m"[0m[31mbool[1;31m"[0m[31m[0m=>
+      [32m#<Proc:0x00007ff8d87df608 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/type/type_map.rb:32>[0m,
+     [31m[1;31m"[0m[31mbit[1;31m"[0m[31m[0m=>
+      [32m#<Proc:0x00007ff8d87df5b8 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/connection_adapters/abstract_adapter.rb:673>[0m,
+     [31m[1;31m"[0m[31mvarbit[1;31m"[0m[31m[0m=>
+      [32m#<Proc:0x00007ff8d87df540 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/connection_adapters/abstract_adapter.rb:673>[0m,
+     [31m[1;31m"[0m[31mtimestamptz[1;31m"[0m[31m[0m=>
+      [32m#<Proc:0x00007ff8d87df4c8 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/type/hash_lookup_type_map.rb:7>[0m,
+     [31m[1;31m"[0m[31mdate[1;31m"[0m[31m[0m=>
+      [32m#<Proc:0x00007ff8d87df3d8 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/type/type_map.rb:32>[0m,
+     [31m[1;31m"[0m[31mmoney[1;31m"[0m[31m[0m=>
+      [32m#<Proc:0x00007ff8d87df360 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/type/type_map.rb:32>[0m,
+     [31m[1;31m"[0m[31mbytea[1;31m"[0m[31m[0m=>
+      [32m#<Proc:0x00007ff8d87df2e8 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/type/type_map.rb:32>[0m,
+     [31m[1;31m"[0m[31mpoint[1;31m"[0m[31m[0m=>
+      [32m#<Proc:0x00007ff8d87df248 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/type/type_map.rb:32>[0m,
+     [31m[1;31m"[0m[31mhstore[1;31m"[0m[31m[0m=>
+      [32m#<Proc:0x00007ff8d87df158 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/type/type_map.rb:32>[0m,
+     [31m[1;31m"[0m[31mjson[1;31m"[0m[31m[0m=>
+      [32m#<Proc:0x00007ff8d87df040 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/type/type_map.rb:32>[0m,
+     [31m[1;31m"[0m[31mjsonb[1;31m"[0m[31m[0m=>
+      [32m#<Proc:0x00007ff8d87def28 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/type/type_map.rb:32>[0m,
+     [31m[1;31m"[0m[31mcidr[1;31m"[0m[31m[0m=>
+      [32m#<Proc:0x00007ff8d87deeb0 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/type/type_map.rb:32>[0m,
+     [31m[1;31m"[0m[31minet[1;31m"[0m[31m[0m=>
+      [32m#<Proc:0x00007ff8d87dee38 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/type/type_map.rb:32>[0m,
+     [31m[1;31m"[0m[31muuid[1;31m"[0m[31m[0m=>
+      [32m#<Proc:0x00007ff8d87dedc0 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/type/type_map.rb:32>[0m,
+     [31m[1;31m"[0m[31mxml[1;31m"[0m[31m[0m=>
+      [32m#<Proc:0x00007ff8d87ded48 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/type/type_map.rb:32>[0m,
+     [31m[1;31m"[0m[31mtsvector[1;31m"[0m[31m[0m=>
+      [32m#<Proc:0x00007ff8d87dec80 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/type/type_map.rb:32>[0m,
+     [31m[1;31m"[0m[31mmacaddr[1;31m"[0m[31m[0m=>
+      [32m#<Proc:0x00007ff8d87deb90 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/type/type_map.rb:32>[0m,
+     [31m[1;31m"[0m[31mcitext[1;31m"[0m[31m[0m=>
+      [32m#<Proc:0x00007ff8d87deaa0 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/type/type_map.rb:32>[0m,
+     [31m[1;31m"[0m[31mltree[1;31m"[0m[31m[0m=>
+      [32m#<Proc:0x00007ff8d87de988 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/type/type_map.rb:32>[0m,
+     [31m[1;31m"[0m[31mline[1;31m"[0m[31m[0m=>
+      [32m#<Proc:0x00007ff8d87de8c0 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/type/type_map.rb:32>[0m,
+     [31m[1;31m"[0m[31mlseg[1;31m"[0m[31m[0m=>
+      [32m#<Proc:0x00007ff8d87de7a8 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/type/type_map.rb:32>[0m,
+     [31m[1;31m"[0m[31mbox[1;31m"[0m[31m[0m=>
+      [32m#<Proc:0x00007ff8d87de6e0 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/type/type_map.rb:32>[0m,
+     [31m[1;31m"[0m[31mpath[1;31m"[0m[31m[0m=>
+      [32m#<Proc:0x00007ff8d87de5c8 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/type/type_map.rb:32>[0m,
+     [31m[1;31m"[0m[31mpolygon[1;31m"[0m[31m[0m=>
+      [32m#<Proc:0x00007ff8d87de4b0 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/type/type_map.rb:32>[0m,
+     [31m[1;31m"[0m[31mcircle[1;31m"[0m[31m[0m=>
+      [32m#<Proc:0x00007ff8d87de2d0 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/type/type_map.rb:32>[0m,
+     [31m[1;31m"[0m[31minterval[1;31m"[0m[31m[0m=>
+      [32m#<Proc:0x00007ff8d87de280 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/connection_adapters/postgresql_adapter.rb:560>[0m,
+     [31m[1;31m"[0m[31mtime[1;31m"[0m[31m[0m=>
+      [32m#<Proc:0x00007ff8d87de230 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/connection_adapters/abstract_adapter.rb:680>[0m,
+     [31m[1;31m"[0m[31mtimestamp[1;31m"[0m[31m[0m=>
+      [32m#<Proc:0x00007ff8d87de190 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/connection_adapters/abstract_adapter.rb:680>[0m,
+     [31m[1;31m"[0m[31mnumeric[1;31m"[0m[31m[0m=>
+      [32m#<Proc:0x00007ff8d87de168 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/connection_adapters/postgresql_adapter.rb:568>[0m,
+     [1;34m16[0m=>
+      [32m#<Proc:0x00007ff8d87cdb10 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/type/hash_lookup_type_map.rb:7>[0m,
+     [1;34m17[0m=>
+      [32m#<Proc:0x00007ff8d87cdac0 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/type/hash_lookup_type_map.rb:7>[0m,
+     [1;34m18[0m=>
+      [32m#<Proc:0x00007ff8d87cda70 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/type/hash_lookup_type_map.rb:7>[0m,
+     [1;34m19[0m=>
+      [32m#<Proc:0x00007ff8d87cda20 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/type/hash_lookup_type_map.rb:7>[0m,
+     [1;34m20[0m=>
+      [32m#<Proc:0x00007ff8d87cd9d0 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/type/hash_lookup_type_map.rb:7>[0m,
+     [1;34m21[0m=>
+      [32m#<Proc:0x00007ff8d87cd980 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/type/hash_lookup_type_map.rb:7>[0m,
+     [1;34m23[0m=>
+      [32m#<Proc:0x00007ff8d87cd8e0 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/type/hash_lookup_type_map.rb:7>[0m,
+     [1;34m25[0m=>
+      [32m#<Proc:0x00007ff8d87cd890 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/type/hash_lookup_type_map.rb:7>[0m,
+     [1;34m26[0m=>
+      [32m#<Proc:0x00007ff8d87cd840 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/type/hash_lookup_type_map.rb:7>[0m,
+     [1;34m114[0m=>
+      [32m#<Proc:0x00007ff8d87cd7f0 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/type/hash_lookup_type_map.rb:7>[0m,
+     [1;34m142[0m=>
+      [32m#<Proc:0x00007ff8d87cd7a0 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/type/hash_lookup_type_map.rb:7>[0m,
+     [1;34m600[0m=>
+      [32m#<Proc:0x00007ff8d87cd750 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/type/hash_lookup_type_map.rb:7>[0m,
+     [1;34m601[0m=>
+      [32m#<Proc:0x00007ff8d87cd700 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/type/hash_lookup_type_map.rb:7>[0m,
+     [1;34m602[0m=>
+      [32m#<Proc:0x00007ff8d87cd6b0 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/type/hash_lookup_type_map.rb:7>[0m,
+     [1;34m603[0m=>
+      [32m#<Proc:0x00007ff8d87cd660 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/type/hash_lookup_type_map.rb:7>[0m,
+     [1;34m604[0m=>
+      [32m#<Proc:0x00007ff8d87cd610 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/type/hash_lookup_type_map.rb:7>[0m,
+     [1;34m628[0m=>
+      [32m#<Proc:0x00007ff8d87cd598 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/type/hash_lookup_type_map.rb:7>[0m,
+     [1;34m700[0m=>
+      [32m#<Proc:0x00007ff8d87cd548 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/type/hash_lookup_type_map.rb:7>[0m,
+     [1;34m701[0m=>
+      [32m#<Proc:0x00007ff8d87cd4f8 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/type/hash_lookup_type_map.rb:7>[0m,
+     [1;34m718[0m=>
+      [32m#<Proc:0x00007ff8d87cd458 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/type/hash_lookup_type_map.rb:7>[0m,
+     [1;34m790[0m=>
+      [32m#<Proc:0x00007ff8d87cd408 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/type/hash_lookup_type_map.rb:7>[0m,
+     [1;34m829[0m=>
+      [32m#<Proc:0x00007ff8d87cd368 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/type/hash_lookup_type_map.rb:7>[0m,
+     [1;34m869[0m=>
+      [32m#<Proc:0x00007ff8d87cd318 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/type/hash_lookup_type_map.rb:7>[0m,
+     [1;34m650[0m=>
+      [32m#<Proc:0x00007ff8d87cd2c8 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/type/hash_lookup_type_map.rb:7>[0m,
+     [1;34m1042[0m=>
+      [32m#<Proc:0x00007ff8d87cd278 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/type/hash_lookup_type_map.rb:7>[0m,
+     [1;34m1043[0m=>
+      [32m#<Proc:0x00007ff8d87cd228 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/type/hash_lookup_type_map.rb:7>[0m,
+     [1;34m1082[0m=>
+      [32m#<Proc:0x00007ff8d87cd1d8 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/type/hash_lookup_type_map.rb:7>[0m,
+     [1;34m1083[0m=>
+      [32m#<Proc:0x00007ff8d87cd188 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/type/hash_lookup_type_map.rb:7>[0m,
+     [1;34m1114[0m=>
+      [32m#<Proc:0x00007ff8d87cd0e8 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/type/hash_lookup_type_map.rb:7>[0m,
+     [1;34m1184[0m=>
+      [32m#<Proc:0x00007ff8d87cd098 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/type/hash_lookup_type_map.rb:7>[0m,
+     [1;34m1186[0m=>
+      [32m#<Proc:0x00007ff8d87ccff8 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/type/hash_lookup_type_map.rb:7>[0m,
+     [1;34m1560[0m=>
+      [32m#<Proc:0x00007ff8d87ccf80 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/type/hash_lookup_type_map.rb:7>[0m,
+     [1;34m1562[0m=>
+      [32m#<Proc:0x00007ff8d87ccf30 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/type/hash_lookup_type_map.rb:7>[0m,
+     [1;34m1700[0m=>
+      [32m#<Proc:0x00007ff8d87ccee0 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/type/hash_lookup_type_map.rb:7>[0m,
+     [1;34m2950[0m=>
+      [32m#<Proc:0x00007ff8d87cce90 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/type/hash_lookup_type_map.rb:7>[0m,
+     [1;34m3614[0m=>
+      [32m#<Proc:0x00007ff8d87cce40 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/type/hash_lookup_type_map.rb:7>[0m,
+     [1;34m3802[0m=>
+      [32m#<Proc:0x00007ff8d87ccdf0 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/type/hash_lookup_type_map.rb:7>[0m,
+     [1;34m13175[0m=>
+      [32m#<Proc:0x00007ff8d87cc940 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/type/type_map.rb:32>[0m,
+     [1;34m13178[0m=>
+      [32m#<Proc:0x00007ff8d87cc350 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/type/type_map.rb:32>[0m,
+     [1;34m13180[0m=>
+      [32m#<Proc:0x00007ff8d87c7c10 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/type/type_map.rb:32>[0m,
+     [1;34m13185[0m=>
+      [32m#<Proc:0x00007ff8d87c73f0 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/type/type_map.rb:32>[0m,
+     [1;34m13187[0m=>
+      [32m#<Proc:0x00007ff8d87c6e50 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/type/type_map.rb:32>[0m,
+     [1;34m1000[0m=>
+      [32m#<Proc:0x00007ff8d87c6db0 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/connection_adapters/postgresql/oid/type_map_initializer.rb:99>[0m,
+     [1;34m1001[0m=>
+      [32m#<Proc:0x00007ff8d87c6cc0 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/connection_adapters/postgresql/oid/type_map_initializer.rb:99>[0m,
+     [1;34m1002[0m=>
+      [32m#<Proc:0x00007ff8d87c6c20 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/connection_adapters/postgresql/oid/type_map_initializer.rb:99>[0m,
+     [1;34m1003[0m=>
+      [32m#<Proc:0x00007ff8d87c6b80 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/connection_adapters/postgresql/oid/type_map_initializer.rb:99>[0m,
+     [1;34m1016[0m=>
+      [32m#<Proc:0x00007ff8d87c6a68 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/connection_adapters/postgresql/oid/type_map_initializer.rb:99>[0m,
+     [1;34m1005[0m=>
+      [32m#<Proc:0x00007ff8d87c69c8 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/connection_adapters/postgresql/oid/type_map_initializer.rb:99>[0m,
+     [1;34m1007[0m=>
+      [32m#<Proc:0x00007ff8d87c6928 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/connection_adapters/postgresql/oid/type_map_initializer.rb:99>[0m,
+     [1;34m1009[0m=>
+      [32m#<Proc:0x00007ff8d87c6838 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/connection_adapters/postgresql/oid/type_map_initializer.rb:99>[0m,
+     [1;34m1028[0m=>
+      [32m#<Proc:0x00007ff8d87c6798 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/connection_adapters/postgresql/oid/type_map_initializer.rb:99>[0m,
+     [1;34m199[0m=>
+      [32m#<Proc:0x00007ff8d87c66f8 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/connection_adapters/postgresql/oid/type_map_initializer.rb:99>[0m,
+     [1;34m143[0m=>
+      [32m#<Proc:0x00007ff8d87c6658 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/connection_adapters/postgresql/oid/type_map_initializer.rb:99>[0m,
+     [1;34m1017[0m=>
+      [32m#<Proc:0x00007ff8d87c65b8 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/connection_adapters/postgresql/oid/type_map_initializer.rb:99>[0m,
+     [1;34m1018[0m=>
+      [32m#<Proc:0x00007ff8d87c6518 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/connection_adapters/postgresql/oid/type_map_initializer.rb:99>[0m,
+     [1;34m1019[0m=>
+      [32m#<Proc:0x00007ff8d87c6478 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/connection_adapters/postgresql/oid/type_map_initializer.rb:99>[0m,
+     [1;34m1020[0m=>
+      [32m#<Proc:0x00007ff8d87c6310 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/connection_adapters/postgresql/oid/type_map_initializer.rb:99>[0m,
+     [1;34m1027[0m=>
+      [32m#<Proc:0x00007ff8d87c6270 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/connection_adapters/postgresql/oid/type_map_initializer.rb:99>[0m,
+     [1;34m629[0m=>
+      [32m#<Proc:0x00007ff8d87c61d0 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/connection_adapters/postgresql/oid/type_map_initializer.rb:99>[0m,
+     [1;34m1021[0m=>
+      [32m#<Proc:0x00007ff8d87c6108 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/connection_adapters/postgresql/oid/type_map_initializer.rb:99>[0m,
+     [1;34m1022[0m=>
+      [32m#<Proc:0x00007ff8d87c6068 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/connection_adapters/postgresql/oid/type_map_initializer.rb:99>[0m,
+     [1;34m719[0m=>
+      [32m#<Proc:0x00007ff8d87c5fc8 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/connection_adapters/postgresql/oid/type_map_initializer.rb:99>[0m,
+     [1;34m791[0m=>
+      [32m#<Proc:0x00007ff8d87c5ed8 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/connection_adapters/postgresql/oid/type_map_initializer.rb:99>[0m,
+     [1;34m1040[0m=>
+      [32m#<Proc:0x00007ff8d87c5e38 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/connection_adapters/postgresql/oid/type_map_initializer.rb:99>[0m,
+     [1;34m1041[0m=>
+      [32m#<Proc:0x00007ff8d87c5d48 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/connection_adapters/postgresql/oid/type_map_initializer.rb:99>[0m,
+     [1;34m651[0m=>
+      [32m#<Proc:0x00007ff8d87c5ca8 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/connection_adapters/postgresql/oid/type_map_initializer.rb:99>[0m,
+     [1;34m1014[0m=>
+      [32m#<Proc:0x00007ff8d87c5c08 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/connection_adapters/postgresql/oid/type_map_initializer.rb:99>[0m,
+     [1;34m1015[0m=>
+      [32m#<Proc:0x00007ff8d87c5b18 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/connection_adapters/postgresql/oid/type_map_initializer.rb:99>[0m,
+     [1;34m1182[0m=>
+      [32m#<Proc:0x00007ff8d87c5a78 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/connection_adapters/postgresql/oid/type_map_initializer.rb:99>[0m,
+     [1;34m1183[0m=>
+      [32m#<Proc:0x00007ff8d87c59d8 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/connection_adapters/postgresql/oid/type_map_initializer.rb:99>[0m,
+     [1;34m1115[0m=>
+      [32m#<Proc:0x00007ff8d87c58c0 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/connection_adapters/postgresql/oid/type_map_initializer.rb:99>[0m,
+     [1;34m1185[0m=>
+      [32m#<Proc:0x00007ff8d87c57d0 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/connection_adapters/postgresql/oid/type_map_initializer.rb:99>[0m,
+     [1;34m1187[0m=>
+      [32m#<Proc:0x00007ff8d87c56e0 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/connection_adapters/postgresql/oid/type_map_initializer.rb:99>[0m,
+     [1;34m1561[0m=>
+      [32m#<Proc:0x00007ff8d87c55c8 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/connection_adapters/postgresql/oid/type_map_initializer.rb:99>[0m,
+     [1;34m1563[0m=>
+      [32m#<Proc:0x00007ff8d87c5528 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/connection_adapters/postgresql/oid/type_map_initializer.rb:99>[0m,
+     [1;34m1231[0m=>
+      [32m#<Proc:0x00007ff8d87c5438 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/connection_adapters/postgresql/oid/type_map_initializer.rb:99>[0m,
+     [1;34m2951[0m=>
+      [32m#<Proc:0x00007ff8d87c5398 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/connection_adapters/postgresql/oid/type_map_initializer.rb:99>[0m,
+     [1;34m3643[0m=>
+      [32m#<Proc:0x00007ff8d87c5258 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/connection_adapters/postgresql/oid/type_map_initializer.rb:99>[0m,
+     [1;34m3807[0m=>
+      [32m#<Proc:0x00007ff8d87c51b8 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/connection_adapters/postgresql/oid/type_map_initializer.rb:99>[0m,
+     [1;34m13174[0m=>
+      [32m#<Proc:0x00007ff8d87c5118 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/connection_adapters/postgresql/oid/type_map_initializer.rb:99>[0m,
+     [1;34m13177[0m=>
+      [32m#<Proc:0x00007ff8d87c5028 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/connection_adapters/postgresql/oid/type_map_initializer.rb:99>[0m,
+     [1;34m13179[0m=>
+      [32m#<Proc:0x00007ff8d87c4f88 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/connection_adapters/postgresql/oid/type_map_initializer.rb:99>[0m,
+     [1;34m13184[0m=>
+      [32m#<Proc:0x00007ff8d87c4ee8 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/connection_adapters/postgresql/oid/type_map_initializer.rb:99>[0m,
+     [1;34m13186[0m=>
+      [32m#<Proc:0x00007ff8d87c4df8 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/connection_adapters/postgresql/oid/type_map_initializer.rb:99>[0m,
+     [1;34m3904[0m=>
+      [32m#<Proc:0x00007ff8d87c4ce0 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/connection_adapters/postgresql/oid/type_map_initializer.rb:99>[0m,
+     [1;34m3906[0m=>
+      [32m#<Proc:0x00007ff8d87c4c40 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/connection_adapters/postgresql/oid/type_map_initializer.rb:99>[0m,
+     [1;34m3908[0m=>
+      [32m#<Proc:0x00007ff8d87c4b50 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/connection_adapters/postgresql/oid/type_map_initializer.rb:99>[0m,
+     [1;34m3910[0m=>
+      [32m#<Proc:0x00007ff8d87c4a88 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/connection_adapters/postgresql/oid/type_map_initializer.rb:99>[0m,
+     [1;34m3912[0m=>
+      [32m#<Proc:0x00007ff8d87c49e8 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/connection_adapters/postgresql/oid/type_map_initializer.rb:99>[0m,
+     [1;34m3926[0m=>
+      [32m#<Proc:0x00007ff8d87c4948 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/connection_adapters/postgresql/oid/type_map_initializer.rb:99>[0m,
+     [1;34m22[0m=>
+      [32m#<Proc:0x00007ff8d87c43f8 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/type/type_map.rb:32>[0m,
+     [1;34m30[0m=>
+      [32m#<Proc:0x00007ff8d87bfec0 /home/qazal/.rvm/gems/ruby-2.7.0/gems/activerecord-6.0.3.2/lib/active_record/type/type_map.rb:32>[0m}[32m>[0m,
+ @use_insert_returning[32m=[0m[1;36mtrue[0m,
+ @visitor[32m=[0m
+  [32m#<Arel::Visitors::PostgreSQL:0x00007ff8d87ee540[0m
+   @connection[32m=[0m[32m#<ActiveRecord::ConnectionAdapters::PostgreSQLAdapter:0x00007ff8d87f3978[0m ...[32m>[0m,
+   @dispatch[32m=[0m
+    {[1;34;4mArel[0m::[1;34;4mNodes[0m::[1;34;4mSelectStatement[0m=>[31m[1;31m"[0m[31mvisit_Arel_Nodes_SelectStatement[1;31m"[0m[31m[0m,
+     [1;34;4mArel[0m::[1;34;4mAttributes[0m::[1;34;4mAttribute[0m=>[31m[1;31m"[0m[31mvisit_Arel_Attributes_Attribute[1;31m"[0m[31m[0m,
+     [1;34;4mArel[0m::[1;34;4mNodes[0m::[1;34;4mJoinSource[0m=>[31m[1;31m"[0m[31mvisit_Arel_Nodes_JoinSource[1;31m"[0m[31m[0m,
+     [1;34;4mArel[0m::[1;34;4mTable[0m=>[31m[1;31m"[0m[31mvisit_Arel_Table[1;31m"[0m[31m[0m,
+     [1;34;4mArel[0m::[1;34;4mNodes[0m::[1;34;4mLimit[0m=>[31m[1;31m"[0m[31mvisit_Arel_Nodes_Limit[1;31m"[0m[31m[0m,
+     [1;34;4mArel[0m::[1;34;4mNodes[0m::[1;34;4mBindParam[0m=>[31m[1;31m"[0m[31mvisit_Arel_Nodes_BindParam[1;31m"[0m[31m[0m,
+     [1;34;4mArel[0m::[1;34;4mNodes[0m::[1;34;4mOffset[0m=>[31m[1;31m"[0m[31mvisit_Arel_Nodes_Offset[1;31m"[0m[31m[0m},
+   @preparable[32m=[0m[1;36mtrue[0m[32m>[0m[32m>[0m
