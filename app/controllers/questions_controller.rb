@@ -12,11 +12,11 @@ class QuestionsController < ApplicationController
       redirect_to question_path(@question)
     else
       render :new
+    end
   end
 
 
   def show
-    question_find
   end
 
   def index
@@ -24,23 +24,23 @@ class QuestionsController < ApplicationController
   end
 
   def edit
-    question_find
   end
 
   def update
-    question_find
     if @question.update question_params
       redirec_to question_path(@question)
     else
       render :edit
+    end
   end
 
   def destroy
-    question_find
     flash[:notice] = "Are You Sure?"
     @question.destroy
     redirect_to questions_path
   end
+
+
 
 
   private
@@ -49,10 +49,12 @@ class QuestionsController < ApplicationController
     params.require(:question).permit(:title, :body)
   end
 
-  def question_find
-    @question = Question.find params[:id]
+
+  def find_question
+      # get the Question with the id that's requested
+      @question = Question.find params[:id]
   end
 
-  end
+
 
 end
