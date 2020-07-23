@@ -12,22 +12,23 @@ Rails.application.routes.draw do
 
 
 
- get "/questions/new", {to: "questions#new", as: :new_questions}
+ # get "/questions/new", {to: "questions#new", as: :new_questions}
+ #
+ # post "/questions", {to: "questions#create", as: :questions}
+ #
+ # get "/questions/:id", {to: "questions#show", as: :question}
+ #
+ # get "/questions", {to: "questions#index"}
+ #
+ # get "/questions/:id/edit", {to: "questions#edit", as: :edit_question}
+ #
+ # patch "/questions/:id", {to: "questions#update"}
+ #
+ # delete "/questions/:id", {to: "questions#destroy"}
 
- post "/questions", {to: "questions#create", as: :questions}
-
- get "/questions/:id", {to: "questions#show", as: :question}
-
- get "/questions", {to: "questions#index"}
-
- get "/questions/:id/edit", {to: "questions#edit", as: :edit_question}
-
- patch "/questions/:id", {to: "questions#update"}
-
-
- delete "/questions/:id", {to: "questions#destroy"}
-
- # resources :questions
+ resources :questions do
+   resources :answers, only: [:create, :destroy]
+ end
 
 end
 

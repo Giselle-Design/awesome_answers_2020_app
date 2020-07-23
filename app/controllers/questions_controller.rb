@@ -18,6 +18,8 @@ class QuestionsController < ApplicationController
 
 
   def show
+    @answer = Answer.new
+    @answer = @question.answers.order(created_at: :desc)
   end
 
   def index
