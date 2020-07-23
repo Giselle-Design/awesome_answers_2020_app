@@ -10,7 +10,15 @@
   </head>
 
   <body>
-    <%= link_to "Contact Us", contact_us_path %>
+    <%= flash[:notice] || flash[:alert] %>
+
+<ul class = "navbar">
+  <li class="navitem"><%= link_to "Contact_Us", contact_us_path %></li>
+  |
+  <li class="navitem"><%= link_to "New Question", new_questions_path %></li>
+  |
+  <li class="navitem"><%= link_to "All Question", questions_path %></li>
+</ul>
     <%= yield %>
   </body>
 </html>

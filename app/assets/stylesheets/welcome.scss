@@ -42,3 +42,36 @@ input[type=email]{
   padding: 20px;
   margin: 50px 400px 50px 400px
 }
+
+.edit {
+  background-color: #1a75ff;
+  border-style: none;
+  border-radius: 0.5em;
+  width: 10%;
+  padding: 7px;
+  font-size: 1em;
+  margin-right: 10px;
+}
+
+.delete {
+  background-color: #db0726;
+  border-style: none;
+  border-radius: 0.5em;
+  width: 10%;
+  padding: 7px;
+  font-size: 1em;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+ .navitem{
+   display: inline;
+ }

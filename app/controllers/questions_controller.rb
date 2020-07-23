@@ -6,6 +6,7 @@ class QuestionsController < ApplicationController
   end
 
   def create
+
     @question=Question.new question_params
     if @question.save
       flash[:notice] = "Question Created Successfully"
@@ -28,16 +29,16 @@ class QuestionsController < ApplicationController
 
   def update
     if @question.update question_params
-      redirec_to question_path(@question)
+      redirect_to question_path(@question)
     else
       render :edit
     end
   end
 
   def destroy
-    flash[:notice] = "Are You Sure?"
-    @question.destroy
-    redirect_to questions_path
+      flash[:notice] = "Question Destroyed!"
+      @question.destroy
+      redirect_to questions_path
   end
 
 

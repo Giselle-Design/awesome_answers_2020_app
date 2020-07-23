@@ -1,1 +1,8 @@
-<h1>You can See specific Question Here<h1>
+
+<div class="container">
+  <h1><%= @question.title %></h1>
+  <p><%= @question.body%></p>
+  <p><%= @question.created_at %></p>
+  <button class="edit"><%= link_to "Edit", edit_question_path(@question) %></button>
+  <button class="delete"><%= link_to "Delete", questions_path(@question), method: :delete, data: {confirm: "Are You sure?"} %></button>
+</div>
