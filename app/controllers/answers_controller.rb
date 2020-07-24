@@ -8,14 +8,14 @@ class AnswersController < ApplicationController
    if @answer.save
      redirect_to question_path(@question)
    else
-     @answer = @question.answers.order(created_at: :desc)
-     render "question/show"
+     @answers = @question.answers.order(created_at: :desc)
+     render "questions/show"
    end
   end
 
   def destroy
    # DELETE PATH/questions/:question_id/answers/:id
-    @answer = Answer.find param[:id]
+    @answer = Answer.find params[:id]
     @answer.destroy
     redirect_to question_path(@answer.question)
 

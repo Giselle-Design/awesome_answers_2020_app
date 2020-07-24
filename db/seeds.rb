@@ -7,19 +7,29 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 Question.delete_all
+Answer.delete_all
 
 NUM_QUESTIONS = 200
 
+
 NUM_QUESTIONS.times do
   created_at = Faker::Date.backward(days: 365 * 3)
-  Question.create(
+  q = Question.create(
   title: Faker::Hacker.say_something_smart,
   body:  Faker::ChuckNorris.fact,
   created_at: created_at,
   updated_at: created_at,
-  view_count: Faker::Number.between(from: 1, to: 100) 
+  view_count: Faker::Number.between(from: 1, to: 100)
   )
+  if q.valid?
+    q.answers = rand(0..15).times.map do
+      Answer.new(body: Faker::GreekPhilosophers.quote)
+    end
+  end
 end
 
 question = Question.all
+answer = Answer.all
+
 puts Cowsay.say("Generated #{question.count} questions", :turkey)
+puts Cowsay.say("Generated #{answer.count} answers", :turtle)

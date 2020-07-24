@@ -2,7 +2,7 @@
 input[type=text], select, textarea {
   width: 100%; /* Full width */
   padding: 12px; /* Some padding */
-  border: 1px solid #ccc; /* Gray border */
+  border: 1px solid #a6a6a6; /* Gray border */
   border-radius: 4px; /* Rounded borders */
   box-sizing: border-box; /* Make sure that padding and width stays in place */
   margin-top: 7px; /* Add a top margin */
@@ -37,6 +37,7 @@ input[type=email]{
 
 /* Add a background color and some padding around the form */
 .container {
+  font-family: Verdana, Arial, serif;
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
@@ -67,11 +68,161 @@ a {
   text-decoration: none;
 }
 
-.navbar {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+
+hr {
+  width: 50%
 }
- .navitem{
-   display: inline;
- }
+
+.delete_one{
+  background-color: #db0726;
+  border-style: none;
+  border-radius: 0.5em;
+  width: 7%;
+  padding: 7px;
+  font-size: 0.8em;
+}
+
+small {
+  margin-right: 10px;
+}
+
+.navbar {
+  font-family: Georgia, "Lato black", serif;
+  list-style-type: none;
+  margin: 0 20px 0 20px;
+  padding: 0;
+  overflow: hidden;
+  background-color: #666699;
+  height: 50px;
+}
+
+.active {
+   float: left;
+}
+
+.active_one {
+  float: right;
+}
+
+.active_one a {
+  display: block;
+  color: white;
+  text-align: center;
+  font-size: 1.2em;
+  padding: 14px 14px;
+  text-decoration: none;
+}
+
+.active_one a:hover {
+  background-color: #47476b;
+}
+
+.active a {
+  display: block;
+  color: white;
+  text-align: center;
+  font-size: 1.2em;
+  padding: 14px 14px;
+  text-decoration: none;
+}
+
+.active a:hover {
+  background-color: #47476b;
+}
+
+
+body, html {
+  height: 100%
+}
+
+body {
+  background-color: #b3b3cb;
+}
+
+
+.bgimg {
+  position: relative;
+  margin: 20px;
+  height: 100%;
+  border-style: solid;
+  background-image : url("https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 25px;
+}
+
+.bgimg_one {
+  position: relative;
+  margin: 20px;
+  height: 100%;
+  border-style: solid;
+  background-image : url("https://images.unsplash.com/photo-1585547769764-bbd08e8b9b35?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1443&q=80");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 15px;
+}
+
+.middle_one {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+
+
+.middle {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.topic {
+  font-family: Georgia, "Lato black", serif;
+  color : white;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px
+}
+
+.topic_one {
+   color: #3973ac;
+}
+
+.topic_one a {
+  color: #3973ac;
+}
+
+@media screen and (max-width: 667px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+.topic_two {
+  color : white;
+  margin-top: 30px;
+  margin-left: 20px;
+  font-family: Georgia, "Lato black", serif;
+}
+
+.container_four {
+    color: #3973ac;
+    font-family:  Georgia, "Lato black", serif;
+    padding: 20px;
+    margin: 50px 400px 50px 400px;
+    text-align: center;
+    line-height: 150%
+}

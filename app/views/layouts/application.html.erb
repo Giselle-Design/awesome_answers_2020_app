@@ -7,18 +7,20 @@
 
     <%= stylesheet_link_tag 'application', media: 'all' %>
     <%= javascript_pack_tag 'application' %>
+    <meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+
   </head>
 
   <body>
-    <%= flash[:notice] || flash[:alert] %>
+    <ul class= "navbar">
+      <li class = "active"><%= link_to "Home", root_path %></li>
+      <li class = "active_one"><%= link_to "Contact_Us", contact_us_path %></li>
+      <li class = "active_one"><%= link_to "New Question", new_question_path %></li>
+      <li class = "active_one"><%= link_to "All Question", questions_path %></li>
+    </ul>
 
-<ul class = "navbar">
-  <li class="navitem"><%= link_to "Contact_Us", contact_us_path %></li>
-  |
-  <li class="navitem"><%= link_to "New Question", new_question_path %></li>
-  |
-  <li class="navitem"><%= link_to "All Question", questions_path %></li>
-</ul>
+    <h3 class = "topic_two"><%= flash[:notice] || flash[:alert] %></h3>
     <%= yield %>
   </body>
 </html>

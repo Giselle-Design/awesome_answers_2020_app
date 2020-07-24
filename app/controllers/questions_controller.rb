@@ -19,7 +19,7 @@ class QuestionsController < ApplicationController
 
   def show
     @answer = Answer.new
-    @answer = @question.answers.order(created_at: :desc)
+    @answers = @question.answers.order(created_at: :desc)
   end
 
   def index
@@ -38,7 +38,7 @@ class QuestionsController < ApplicationController
   end
 
   def destroy
-      flash[:notice] = "Question Destroyed!"
+      flash[:notice] = "Question Deleted!"
       @question.destroy
       redirect_to questions_path
   end
