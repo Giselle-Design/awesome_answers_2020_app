@@ -20,10 +20,11 @@ class Question < ApplicationRecord
     # .answers.create(attributes = {}, ...)
     # .answers.create!(attributes = {}, ...)
     # .answers.reload
+    belongs_to :user
 
     validates(:title, presence: true, uniqueness: true)
 
-    validates(
+    # validates(
         :body,
         presence: { message:"You have to provide body"},
         length: { minimum: 10 }
