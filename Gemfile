@@ -42,7 +42,7 @@ group :development do
   gem 'pry'
   gem 'pry-rails'
   gem 'faker', '~> 2.13'
-  gem 'fontawesome-rails', '~> 4.0'
+  
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
